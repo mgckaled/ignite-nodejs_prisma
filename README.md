@@ -48,11 +48,26 @@ Nesse módulo, iremos conhecer o Prisma IO, que é um framework ORM. Ao longo de
 
 ```bash
 # instalar dependências:
-$ yarn install
-# executar servidor:
-$ yarn dev
+$ yarn
+# executar arquivo ts
+$ yarn ts-node-dev <src>/<file>.ts
+```
+
+Comandos Prisma:
+
+```bash
+# mostrar versão
+$ yarn prisma -v
+# iniciar prisma com sqlite
+$ yarn prisma init --datasource-provider sqlite
+# Validar arquivo schema.prisma
+$ yarn prisma validate
 # executar prisma studio
 $ yarn prisma studio
+# migração
+$ yarn prisma migrate dev
+# mostrar status das migrações
+$ yarn prisma migrate status
 ```
 
 ## Licença
